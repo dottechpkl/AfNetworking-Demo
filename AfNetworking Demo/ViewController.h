@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    IBOutlet UITableView *table;
+}
+// Actions
+- (IBAction)clear:(id)sender;
+- (IBAction)jsonTapped:(id)sender;
+- (IBAction)plistTapped:(id)sender;
+- (IBAction)xmlTapped:(id)sender;
+- (IBAction)clientTapped:(id)sender;
+- (IBAction)apiTapped:(id)sender;
 @end
